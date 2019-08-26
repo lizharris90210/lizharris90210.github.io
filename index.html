@@ -1,52 +1,43 @@
-
 <!DOCTYPE html>
-<html>
-    <head id="head">
+<html lang="en-US">
 
-        <title>About Me</title>
-        <link rel="stylesheet" type="text/css" href="/style.css">
-        <link rel="stylesheet" script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    </head>
-    
-    <body>
-        <header id="masthead">
-            <div class="container-fluid">
-            <a href="index.html" id="logo">Liz Harris</a>
-            <nav id="nav">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="index.html" id="about">About</a>
-                    <a class="navbar-brand" href="portfolio.html" id="portfolio">Portfolio</a>
-                    <a class="navbar-brand" href="contact.html" id="contact">Contact</a>
-            </nav>
-            </div>
-        </header>
-        <div id="main-container" class="container-fluid"></div>
-        <section class="main-container">
-            <h1>About Me</h1>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxNo_dUbsLpJYYF1Z2hWLMd-plG2oxlv1t9er9NBMrJT71-Aq4SA" class="auth-image" alt="lizPic">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width">
+    </meta>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Aclonica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-            <p>I am a marketing guru, chef, event planner, and now, web developer.</p>
-            <p>I grew up in the suburbs of Washington, DC, where I started out my marketing career, 
-                and later, culinary. I moved to Raleigh in 2011 for a better pace of life and ended 
-                up in event planning. Now, I'm in a web developer bootcamp, learning to code, design, 
-                build, and maintain websites, applications, and databases.</p>
-            <p>My passions are cooking, gardening, family, and music. You'll find me at live shows 
-                constantly. </p>
+    <title>Word Guess Game</title>
+</head>
 
-        </section>
+<body>
+
+    <div class="wrapper">
+        <div class="container-fluid">Weasley's Wizarding Words</div>
+    </div>
+    <div id="instructions">Press any key to play!</div>
+
+    <div class="sidebarL" id="guesses">
         
-        <footer>
-            <div class="container-fluid">
-                &copy; Copyright 2019 Liz Harris
-            </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
-        
-    </body>
+        <p class="guess">Letters Guessed:</p>
+          <p class="wordGuess" id="lettersAndDashes"></p>
+           <!-- <p id= "wordHolder"></p> -->
+        <p><div id="lettersGuessed"></div></p>
+
+        </div>
+    </div>
+    <div class="sidebarR" id="wins">Wins:
+        <span id="winsNumber"></span></p>
+        <p id="losses">Losses:
+            <span id="lossesNumber"></span></p>
+        <p id="guesses">Guesses Remaining:
+            <span id="letter"></span></p>
+
+    </div>
+    <script src="game.js"></script>
+</body>
+
 </html>
